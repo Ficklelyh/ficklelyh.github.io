@@ -1,0 +1,91 @@
+*{padding: 0;margin: 0;}
+::selection{background-color: #79706166;}
+a{transition: 0.2s;color: black;text-decoration: none;}
+a:hover{color: #72A341;}
+#hideHtml{display: none;}
+.ZuiJinLin{image-rendering: pixelated;}
+
+#pageBox{position: relative;width: 100%;overflow: hidden;background-color: #D7F6F4;}
+#basicBg,#typeBg{width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
+#basicBg img,#typeBg img{height: 100%;}
+#typeBg{position: absolute;left: 0;top: 0;}
+#typeBg img{transition: 0.5s;}
+#homeLogo{position: absolute;left: 10px;top: 10px;}
+#homeLogo img{width: 120px;}
+
+#barBox{transition: 0.5s;position: absolute;right: 0;top: 0;width: 30%;height: 100%;display: flex;align-items: center;}
+#barBoxBg{width: 100%;list-style: none;font-family: font_cut_yanshiqiuhongkai;background-color: rgba(255, 255, 255, 0.8);}
+#barBoxBg li{text-align: center;font-size: 25px;margin: 20px auto;cursor: pointer;}
+#infoBox{position: absolute;top: 0;left: 0;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
+#infoBg{transition: 0.5s;width: 90%;height: 70%;background-color: rgba(255, 255, 255, 0.8);display: flex;justify-content: center;align-items: center;overflow: hidden;}
+#info{position: relative;width: 90%;height: 90%;margin: 2.5% 5%;}
+#infoLobby{transition: 0.5s;position: absolute;right: 0;top: 10px;cursor: pointer;opacity: 0.5;}
+#infoLobby:hover{opacity: 1;}
+#infoLobby img{width: 20px;height: 20px;}
+#infoTitle,#infoHtml,#infoLink{width: 100%;}
+#infoTitle{font-size: 36px;padding: 0 0 10px 0;font-family: font_cut_yanshiqiuhongkai;}
+#infoHtml{text-align: justify;font-size: 16px;line-height: 30px;overflow: auto;}
+#infoHtml img{width: 100%;margin: 0 auto;}
+#infoLink{position: absolute;left: 0;bottom: 0;padding: 15px 0 0 0;text-align: right;font-size: 16px;}
+
+#bgInfo{transition: 0.5s;position: absolute;left: 10px;bottom: 10px;font-size: 16px;}
+#basicBgInfo{font-size: 20px;font-family: font_cut_yanshiqiuhongkai;}
+#link{transition: 0.5s;position: absolute;right: 10px;bottom: 10px;}
+#link ul{display: flex;align-items: end;}
+#link ul li{list-style: none;float: left;margin: 0 0 0 10px;}
+#link ul li img{transition: 0.5s;width: 20px;height: 20px;margin-left: 5px;}
+
+.listType{position: relative;display: inline-flex;align-items: center;}
+.icon_type_1{display: none;background-image: url('icon_type_1.png');background-size: contain;background-repeat: no-repeat;}
+
+@media screen and (max-width:575px){
+}
+@media screen and (min-width:576px) {
+    #homeLogo{left: 15px;top: 15px;}
+    #homeLogo img{width: 150px;}
+
+    #barBox{width: 25%;}
+    #barBoxBg li{font-size: 28px;}
+    #barBoxBg li:hover .icon_type_1{display: inline-block;height: 20px;width: 20px;margin: 0 5px;}
+    #infoBg{width: 80%;height: 65%;}
+    #infoLobby img{width: 24px;height: 24px;}
+    #infoTitle{font-size: 40px;}
+    #infoHtml{font-size: 18px;line-height: 32px;}
+    #infoLink{font-size: 18px;}
+
+    #bgInfo{font-size: 20px;left: 15px;bottom: 15px;}
+    #basicBgInfo{font-size: 24px;}
+    #link{right: 15px;bottom: 15px;}
+    #link ul li img{width: 30px;height: 30px;margin-left: 10px;}
+    #link ul li img:hover{width: 45px;height: 45px;}
+}
+@media screen and (min-width:768px) {
+}
+@media screen and (min-width:992px) {
+    #homeLogo{left: 20px;top: 20px;}
+    #homeLogo img{width: 200px;}
+
+    #barBox{width: 20%;}
+    #barBoxBg li{font-size: 32px;}
+    #barBoxBg li:hover .icon_type_1{height: 25px;width: 25px;margin: 0 10px;}
+    #infoBg{width: 70%;height: 60%;}
+    #infoLobby img{width: 30px;height: 30px;}
+    #infoTitle{font-size: 46px;}
+    #infoHtml{font-size: 20px;line-height: 36px;}
+    #infoLink{font-size: 20px;}
+
+    #bgInfo{font-size: 24px;left: 20px;bottom: 20px;}
+    #basicBgInfo{font-size: 30px;}
+    #link{right: 20px;bottom: 20px;}
+    #link ul li img{width: 40px;height: 40px;margin-left: 15px;}
+    #link ul li img:hover{width: 60px;height: 60px;}
+}
+@media screen and (min-width:1200px) {
+}
+
+@font-face {
+    font-family: "font_cut_yanshiqiuhongkai";
+    src: url("font_cut_yanshiqiuhongkai.woff2");
+    font-weight: normal;
+    font-style: normal;
+}

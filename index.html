@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS--</title>
+    
+    <link rel="stylesheet" href="use/www/www.css">
+    <meta name='description' content='迷你世界JSAPI 是一款由JavaScript编写的强大接口，旨在与迷你世界的Lua脚本环境无缝集成。这款接口提供了直观的功能输入框以及一系列跨域指令，让你能够轻松地在游戏中实现高级功能。'>
+</head>
+
+<body>
+    <div id="pageBox">
+        <div id="basicBg"><img id="basicBgImg" src="use/www/background_www.webp" alt="网页背景"></div>
+        <div id="typeBg"><img id="typeBgImg" src="" alt=""></div>
+        <div id="homeLogo"><img src="use/www/logo_lny_black.png" alt="伶宁域"></div>
+        <div id="infoBox">
+            <div id="infoBg" style="height: 0;">
+                <div id="info">
+                    <div id="infoLobby" onclick="closeInfoBox()" title="关闭"><img src="use/www/icon_x.png" alt="关闭"></div>
+                    <div id="infoTitle"></div>
+                    <div id="infoHtml"></div>
+                    <div id="infoLink"></div>
+                </div>
+            </div>
+        </div>
+        <div id="barBox">
+            <ul id="barBoxBg">
+                <li onclick="openInfoBox('yuko')"><div class="listType"><span class="icon_type_1"></span><span>介绍</span><span class="icon_type_1"></span></div></li>
+                <li onclick="openInfoBox('mcid')"><div class="listType"><span class="icon_type_1"></span><span>JSAPI</span><span class="icon_type_1"></span></div></li>
+                <li onclick="openInfoBox('animegao')"><div class="listType"><span class="icon_type_1"></span><span>规约</span><span class="icon_type_1"></span></div></li>
+                <li onclick="openInfoBox('about')"><div class="listType"><span class="icon_type_1"></span><span>关于</span><span class="icon_type_1"></span></div></li>
+            </ul>
+        </div>
+        <div id="bgInfo"><span id="basicBgInfo">Hello World！</span><span id="typeBgInfo"></span></div>
+        <div id="link">
+            <ul>
+                <li title="QQ"><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=3861497429" target="_blank" rel="noopener noreferrer"><img src="use/www/plate_qq.png" alt="转至Kwai"></a></li>
+                <li title="哔哩哔哩"><a href="https://space.bilibili.com/382161060" target="_blank" rel="noopener noreferrer"><img src="use/www/plate_bilibili.png" alt="转至bilibili"></a></li>
+                <li title="快手"><a href="https://www.kuaishou.com/profile/3xw4xz8bh873p2k" target="_blank" rel="noopener noreferrer"><img src="use/www/plate_kwai.png" alt="转至Kwai"></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    
+
+    <div id="hideHtml">
+
+
+
+        <div id="type_yuko">
+            <p>  迷你世界提供了丰富的Lua API，允许开发者通过脚本来扩展游戏功能、创建自定义的游戏玩法和实现自动化任务。这些API覆盖了游戏的各种方面，从基础的玩家控制到复杂的物品管理和游戏逻辑处理。 基础概念 API模块：迷你世界的API按照功能分为不同的模块，如world、player、item等。 函数调用：每个API模块包含多个函数，用于执行特定的任务。 事件监听：开发者可以通过注册事件监听器来响应游戏内的各种事件，如玩家加入或离开服务器、物品被拾起或放置等。</p>
+            <div class="video-cont" data-v-b51b9bea=""><video loop="loop" controls="controls" webkit-playsinline="true" playsinline="true" src="https://minioss.miniaixue.com/videos/00c393dfc31f48fc640aa45986fdced9.mp4?resolution=1920x1080" style="width: 100%; height: 100%; border: 0; border-radius: 24PX" data-v-b51b9bea=""></video> </div>
+        </div>
+        <div id="type_yuko_link">
+        <a href="https://www.mini1.cn/" target="_blank" rel="noopener noreferrer">迷你世界官网</a>&emsp;<a href="https://dev-wiki.mini1.cn/" target="_blank" rel="noopener noreferrer">创作者学院</a></div>
+       
+
+
+        <div id="type_mcid">
+            <h1>迷你世界JSAPI：创新的脚本接口</h1>
+            <p>&emsp;</p>
+         <p> 迷你世界JSAPI 是一款由LUA编写的强大接口，旨在与迷你世界的Lua脚本环境无缝集成。这款接口提供了直观的功能输入框以及一系列跨域指令，让你能够轻松地在游戏中实现高级功能。</p>
+        
+        
+        
+         <strong>亮点概览</strong>
+         
+         <p>直观的用户界面：迷你世界JSAPI带有易于使用的图形化输入框，帮助你快速构建复杂的功能，无需深入研究代码细节。</p>
+         <p>丰富的功能集合：从基本的物品给予指令到复杂的队伍管理，迷你世界JSAPI覆盖了广泛的需求，让你的游戏体验更加丰富多样。</p>
+
+        
+         <strong>关键特性</strong>
+         <p>&emsp;</p>
+
+         <p>获取物品 </p>
+         <p>/give 指令 id为物品ID&emsp;number为物品数量</p>
+         <p>/give [string] [id] [number]</p>
+         <p>使用 /give 指令轻松给予玩家物品，无需记忆复杂的物品ID。</p>
+         <p>支持批量给予，一键完成大量物品分配。</p>
+
+         <p>&emsp;</p>
+
+
+         <p>队伍管理</p>
+         <p>/team  id为队伍ID 1~6</p>
+         <p>/team [string] [id]</p>
+         <p>使用/team 指令  快速调整玩家所在的队伍，简化团队管理流程。</p>
+         <p>调用-聊天框输入</p>
+         <p>/team 1</p>
+         <p>游戏:你的队伍变成了红队</p>
+         <p>&emsp;</p>
+         <h1>后续还会更新更多API</h1>
+
+
+        </div>
+        <div id="type_mcid_link">
+            <a  target="_blank" rel="noopener noreferrer">作者QQ3861497429</a> </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="type_animegao">
+            <h2>仅供个人学习研究和交流使用，请于下载后二十四小时内删除。</h2>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="type_about">
+            <p>  你好，我是JS，一名多才多艺的开发者，专注于JavaScript、Lua以及Python等多种编程语言和技术。我在前端开发方面有着丰富的经验，使用JavaScript构建了许多高质量的网页应用，并且对HTML也有深入的理解。此外，我还熟练掌握了PHP，能够开发高效稳定的后端服务。</p>
+            <p>  在游戏开发领域，我对迷你世界的Lua脚本特别感兴趣，并且已经成功地为游戏添加了许多独特的功能。我也熟悉迷你世界的触发器系统，能够创建复杂的事件处理逻辑来增强游戏体验。</p> 
+            <p>   除了上述技能外，我还具备Python爬虫开发的经验，能够从网站上抓取有用的数据进行分析或自动化任务。另外，我还擅长电脑系统的安装与维护，包括重装操作系统和解决各种软件问题。</p>
+            <p> 值得一提的是，我还擅长开发小型软件，从概念设计到实现都能一手包办。无论是桌面应用程序还是简单的工具软件，我都能够快速地将想法转化为实际可用的产品。</p>
+            <p>   我热衷于持续学习新技术，并乐于分享我的知识。在我的空闲时间里，我喜欢参与开源项目和社区讨论，不断提高自己的技能并帮助他人解决问题。</p>
+            <p id="copyright">©JS 版权所有</p>
+        </div>
+        <div id="type_about_link">
+        <a href="https://space.bilibili.com/382161060/" target="_blank" rel="noopener noreferrer">私信JS</a> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="use/www/www.js"></script>
+    <script src="use/www/jquery.min.js"></script>
+</body>
+
+</html>
